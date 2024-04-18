@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <title>Aaditya.Dev</title>
+    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        
+    <style>
+        body{
+            background-color: white;
+        }
+        .header{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            font-family: poppins;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 15;
+          }
+          .header1{
+            width: 100%;
+            height: 50px;
+          }
+          .logo{
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.61);
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            text-shadow: 4px 4px hsl(251.83deg 100% 86.08%);
+          }
+          .actions{
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.61);
+          }
+          .urgent{
+            width: 100%;
+            height: 50px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmEh5nNBYmhdTDcpZWuywKTAnotKptF1hb51AEsh4sgQ&s');
+            background-size: contain;
+            background-blend-mode: color-burn;
+            display: none;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-family: poppins;
+          }
+          .urgent p{
+            z-index: 3;
+            position: absolute;
+            align-items: center;
+            font-weight: bold;
+            font-size: 25px;
+          }
+          .urgent i{
+            z-index: 3;
+            color: #2B2839;
+            cursor: pointer;
+            left: 20px;
+            position: absolute;
+            font-weight: bold;
+            font-size: 25px;
+          }
+          .glass{
+            color: black;
+            background-color: white;
+            width: 100%;height: 100%;
+            opacity: 60%;
+          }
+          .banner{
+            width: 100%;
+            height: 300px;
+            background-color: hsl(251.83deg 100% 86.08%);
+            display: flex;
+            justify-content: space-around;
+          }
+          .leftarrow{
+            width: 150px;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            opacity: 80%;
+            justify-content: center;
+          }
+          .leftarrow i{
+            z-index: 3;
+            position: absolute;
+            align-items: center;
+            font-weight: bold;
+            font-size: 25px;
+          }
+          .rightarrow{
+            width: 150px;
+            height: 100%;
+            background-color: black;
+            opacity: 80%;
+          }
+          .addvertisement1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-family: poppins;
+            align-items: center;
+            column-gap: 30px;
+          }
+          .knowme{
+            width: 100%;
+            margin-top: 0px;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 100px;
+          }
+          .knowmemore{
+            width: 800px;
+            height:400px;
+            background-color:white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .knowmemore1{
+            width: 780px;
+            height: 380px;
+            background-color: rgb(174, 121, 223);
+            border-radius: 10px;
+          }
+          .box{
+            width: 450px;
+            height:400px;
+            background-color:white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .box1{
+            width: 430px;
+            height: 380px;
+            background-color: rgb(253, 253, 152);
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .plate{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
+          .imagediv{
+            width: 300px;
+            height: 100%;
+            background-color: white;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            filter: blur(60);
+            position: relative;
+            opacity: 80%;
+          }
+          .imagecontainer{
+            width: 280px;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: black;
+            overflow: hidden;
+            position: relative;
+          }
+          .imagediv img{
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: contain;
+            position: absolute;
+            z-index: 3;
+            position: absolute;
+            cursor: pointer;
+          }
+          .imagediv img:hover{
+            transition: 0.5s;
+            transform: scale(1.1);
+          }
+          .infodiv{
+            width: 480px;
+            height: 100%;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .slider{
+            width: 40px;
+            height: 200px;
+            background-color: white;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            display: flex;
+            align-items:  center;
+            justify-content: center;
+            box-shadow:  0 2px 4px -1px rgba(0,0,0,.06);
+          }
+          .showdiv{
+            display: flex;
+            animation: slideRightAnimation 1s forwards;
+          }
+          @keyframes slideRightAnimation {
+            from {
+                transform: translateX(-100%);
+                opacity: 0; /* Start with full transparency */
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1; /* End with full opacity */
+            }
+        }
+          .info{
+            width: 440px;
+            height: 100%;
+          }
+          .info h3{
+            font-family: poppins;
+            margin-left: 30px;
+            font-weight: 300;
+          }
+          .info p{
+            width: 400px;
+            font-family: DM Serif Display;
+            font-size: 25px;
+            margin-left: 30px;
+          }
+          .socialmediahandles{
+            width: 200px;
+            height: 50px;
+            margin-left: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+          }
+          .socialmediahandles i{
+            cursor: pointer;
+            color: white;
+            animation: fly 3s linear infinite;
+          }
+          .socialmediahandles i:nth-child(1){
+            animation: fly 3s linear infinite;
+            animation: 1.5s;
+          }
+          .socialmediahandles i:nth-child(3){
+            animation: fly 3s linear infinite;
+            animation-delay: 1.5s;
+          }
+
+          @keyframes fly {
+            0% {
+                transform:translateY(-200%); /* Start position and rotation */
+            }
+            50% {
+                transform: translateY(0) ;/* End position and rotation */
+            }
+            100%{
+                transform: translateY(-200%);
+            }
+        }
+        @keyframes fly1 {
+            0% {
+                transform:translateY(-5%); /* Start position and rotation */
+            }
+            50% {
+                transform: translateY(0) ;/* End position and rotation */
+            }
+            100%{
+                transform: translateY(-5%);
+            }
+        }
+          .letter{
+            position: absolute;
+            width: 420px;
+            height: 300px;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            bottom: 0;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px;
+            column-gap: 10px;
+            row-gap: 20px;
+            animation: fly1 3s linear infinite;
+          }
+          .letter img{
+            width: 70px;
+            height: 70px;
+            mix-blend-mode: multiply;
+            margin-top: 30px;
+            object-fit: contain;
+          }
+          .cover{
+            position: absolute;
+            width: 430px;
+            height: 260px;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+            border-top-right-radius: 20px;
+            background-color: rgb(253, 253, 152);
+          }
+          .cover img{
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            mix-blend-mode:multiply;
+          }
+          .letter:hover{
+            margin-bottom: 70px;
+            animation: liftup 1s linear;
+          }
+          .letter img:nth-child(1){
+            rotate: 23deg;
+          }
+          .letter img:nth-child(2){
+            rotate: 10deg;
+          }
+          .letter img:nth-child(3){
+            rotate: -15deg;
+          }
+          @keyframes liftup {
+
+            0%{
+                margin-bottom: 23.33px;
+            }
+            50%{
+                margin-bottom: 46.66px;
+            }
+            100%{
+                margin-bottom: 70px;
+            }
+          }
+          .journy{
+            width: 100%;
+            height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          @media screen and (max-width:1000px){
+          }
+          .journymap{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+          }
+          .journyway{
+            width: 800px;
+            height: 600px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50px;
+          }
+
+          .journyway1{
+            width: 780px;
+            height: 580px;
+            background-color: hsl(221.74deg 85.19% 84.12%);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+          }
+          .certificate{
+            width: 500px;
+            height: 580px;
+            border-radius: 10px;
+            margin-right: 50px;
+            display: grid;
+            grid-template-rows: 150px 150px 150px;
+            row-gap: 50px;
+          }
+          .achievementPanal{
+            width: 450px;
+            height: 150px;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 10px;
+            align-items: center;
+            box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+          }
+          .achieinfo{
+            width: 290px;
+            height: 140px;
+            font-family: poppins;
+          }
+          .achieinfo h2{
+            font-size: 15px;
+            font-weight: bold;
+          }
+          .bar{
+            width: 300px;
+            height: 100%;
+          }
+          .bar1{
+            background-color: black;
+            position: relative;
+          }
+          .journy-info{
+            width: 100%;
+            height: 100%;
+            border-left-width: 2px;
+            border: solid white;
+            border-right-width: 0px;
+            border-top-width: 0px;
+            border-bottom-width: 0px;
+          }
+          .path{
+            width: 10px;
+            height: 580px;
+            background-color: white;
+            position: absolute;
+            margin-left: 40px;
+            z-index: 2;
+          }
+          .ball{
+            width: 30px;
+            height: 30px;
+            background-color: #437cff;
+            position: absolute;
+            border-radius: 50%;
+            margin-left: 30px;
+            z-index: 3;
+          }
+          .j1{
+            width: 100%;
+            height: 580px;
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: poppins;
+          }
+          .j1 div{
+            margin-left: 45px;
+          }
+          .jj1{
+            width: 80%;
+            height: 50px;
+            display: flex;
+            text-align: right;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+          }
+          .jj2{
+            width: 80%;
+            height: 50px;
+            display: flex;
+            text-align: right;
+            align-items: center;
+            justify-content: center;
+          }
+          .jj3{
+            width: 80%;
+            height: 50px;
+            display: flex;
+            text-align: right;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+          }
+          .ob1{
+            width: 80%;
+            height: 100%;
+            font-family: poppins;
+          }
+          .ob1 h1,h2,h3{
+            margin-left: 30px;
+            font-weight: 300;
+          }
+          .ob2{
+            width: 80%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+            font-family: poppins;
+          }
+          .ob2 h1,h2,h3{
+            margin-left: 30px;
+            font-weight: 300;
+          }
+          .ob3{
+            width: 80%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin-top: 250px;
+            font-family: poppins;
+          }
+          .ob3 h1,h2,h3{
+            margin-left: 30px;
+            font-weight: 300;
+          }
+          .showinfo{
+            display: block;
+          }
+          .hideinfo{
+            display: none;
+          }
+          .graphicsDesigner{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .graphicsdesignercontainer{
+            width: 92%;
+            height: 500px;
+            border-radius: 10px;
+            background-image: url('https://img.freepik.com/free-vector/white-triangles-background_1053-471.jpg?w=740&t=st=1712811505~exp=1712812105~hmac=8a0bc38f3ae17e39cb64b2f081e5a298ca77a0cd37ec6c754932a38a2060c7ec');
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .review{
+            width: 45%;
+            height: 100%;
+          }
+          .rev1{
+            width: 450px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 40px;
+            margin-left: 50px;
+          }
+          .rev2{
+            width: 450px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 40px;
+            margin-left: 100px;
+          }
+          .rev3{
+            width: 450px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 40px;
+            margin-left: 50px;
+          }
+          .fiverr{
+            width: 53%;
+            height: 96%;
+            margin-right: 12px;
+            background-color:#87abff84;
+            border-radius: 10px;
+          }
+          .fiverr h1{
+            font-family: DM Serif Display;
+            font-weight: lighter;
+            margin-left: 30px;
+            color: #00b12d;
+          }
+          .fiverr p{
+            font-family: poppins;
+            width: 500px;
+            margin-left: 30px;
+            font-size: 20px;
+          }
+          .popup{
+            width: 300px;
+            height: 60px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            background-color:#437bff84;
+            position: absolute;
+            z-index: -5;
+            top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 4px 4px white;
+            color: black;
+            font-family: poppins;
+            font-weight: bold;
+          }
+          .popupanimation{
+            animation: popupanimation 0.5s linear;
+          }
+          @keyframes popupanimation {
+            0%{
+              top: 60px;
+            }
+            50%{
+              top: 30px;
+            }
+            100%{
+              top: 0px;
+            }
+          }
+          .project{
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://img.freepik.com/free-vector/white-background-gradient-modern-abstract-design-round-shape_343694-2340.jpg?w=1060&t=st=1712828546~exp=1712829146~hmac=30f3dc8f2eab7962e6e11bff7ec50c1a5a3d31f9dcb9fd84ba4a9103d1dc65d4');
+            background-size: contain;
+          }
+          .projectcontainer{
+            width: 1000px;
+            height: 350px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-rows: 150px 150px;
+            grid-template-columns: 500px 500px;
+            column-gap: 50px;
+            row-gap: 50px;
+          }
+          .innercard{
+            width: 440px;
+            height:140px;
+            background-color:white;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .innercard img{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+          }
+          .cardinfo{
+            width: 300px;
+            height: 90%;
+            background-color: #b097fcab;
+            border-radius: 10px;
+            margin-left: 20px;
+            position: relative;
+            font-family: poppins;
+          }
+          .cardinfo:hover{
+            background-color: #ac91ff;
+          }
+          .cardinfo h2{
+            font-size: 15px;
+          }
+          .lables{
+            width: 300px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+          }
+          .lables div{
+            width: 60px;
+            height: 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: poppins;
+            font-size: 15px;
+            font-weight: 200;
+            margin-left: 10px;
+          }
+          .lables div:nth-child(1){
+            background-color: orangered;
+          }
+          .lables div:nth-child(2){
+            background-color: rgba(45, 45, 255, 0.866);
+          }
+          .lables div:nth-child(3){
+            background-color: rgb(255, 233, 65);
+          }
+          .lables div:nth-child(4){
+            background-color: rgb(123, 123, 123);
+          }
+    </style>
+    <body>
+            <div class='header'>
+              <div class='logo'><p id="dev"> Me Aaditya.Dev</p></div>
+              <div class='actions'></div>
+            </div>
+
+            <div class='header1'>
+              </div>
+
+
+            <div class='urgent'>
+                <i class="fa-regular fa-circle-xmark"></i>
+            <p>50% Sale on Graphics Designs & 3 Pager Portfolio Websites </p>
+              <div class='glass'>
+              </div>
+            </div>
+
+
+            <p style="margin-left: 60px;font-family:poppins;font-size:30px;color:#2B2839;text-shadow:4px 4px hsl(251.83deg 100% 86.08%)">Wellcome Dear!</p>
+                <div class="knowme" id="knowme">
+                    <div class="knowmemore">
+                        <div class="knowmemore1">
+                            <div class="plate" >
+                                <div class="imagediv" id="imgdiv">
+                                    <div class="imagecontainer">
+                                        <img src="https://aadim112.github.io/Aaditya.Dev/image/aaditya.jpeg"/>
+                                    </div>
+                                </div>
+                                <div class="infodiv">
+                                    <div class="slider"><i class="fa-solid fa-circle-chevron-left fa-lg" style="color: #B197FC;rotate:180deg;animation: fly 3s linear infinite;cursor:pointer" onclick="showimg()" id="pull"></i></div>
+                                    <div class="info" id="info">
+                                        <div style="width:100%">
+                                            <p id="infop">FullStack Web Devloper, Graphics Designer 👋🏼</p>
+                                            <h3 id="infoh3">As a graphic designer and full-stack web developer, you possess a diverse skill set that allows you to create visually appealing designs and implement them into functional web applications. Here's a brief overview of both roles.</h3>
+                                            <div class="socialmediahandles" id="socialmediahandles">
+                                                <i class="fa-brands fa-x-twitter fa-xl"></i>
+                                                <i class="fa-brands fa-instagram fa-xl"></i>
+                                                <i class="fa-brands fa-linkedin fa-xl"></i>
+                                                <i class="fa-brands fa-github fa-xl"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box1">
+                            <p style="top: 0;z-index:9;font-family:poppins">Pull The Card</p>
+                            <div class="letter">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/946px-Javascript_badge.svg.png"/>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"/>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HVNHQmF6XqXS0xqpvfcJFY3cQIAQEB3XmJ_edOZdMQ&s"/>
+
+                            </div>
+                            <div class="cover">
+                                <img src="https://img.freepik.com/free-vector/programming-languages-learning-software-coding-courses-website-development-class-script-writing-it-programmers-cartoon-characters_335657-789.jpg?t=st=1712759889~exp=1712763489~hmac=8a893e1d6db9fd30cc726101eda56d190e4087401d2481bb40541719d9083b7c&w=740"/>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+
+             <div class="journy">
+                <div class="journymap">
+                    <div class="journyway">
+                        <div class="journyway1">
+                            <div class="bar">
+                                <div class="bar1">
+                                    <div class="path"></div>
+                                    <div class="ball" id="ball"></div>
+                                    <div class="j1">
+                                      <div class="jj1">Learnt HTML</div>
+                                      <div class="jj2">Learnt Python</div>
+                                      <div class="jj3">Learnt React</div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="journy-info">
+                              <div class="ob1" id="ob1">
+                                <h1>Learnt HTML</h1>
+                                <h2>What is my Expirence in this?</h2>
+                                <h3>As a graphic designer and full-stack web developer, you possess a diverse skill set that allows you to create visually appealing designs and implement them into functional web applications. Here's a brief overview of both roles.</h3>
+                              </div>
+                              <div class="ob2" id="ob2">
+                                <h1>Learnt Python</h1>
+                                <h2>What is my Expirence in this?</h2>
+                                <h3>As a graphic designer and full-stack web developer, you possess a diverse skill set that allows you to create visually appealing designs and implement them into functional web applications. Here's a brief overview of both roles.</h3>
+                              </div>
+                              <div class="ob3" id="ob3">
+                                <h1>Learnt React</h1>
+                                <h2>What is my Expirence in ract?</h2>
+                                <h3>As a graphic designer and full-stack web developer, you possess a diverse skill set that allows you to create visually appealing designs and implement them into functional web applications. Here's a brief overview of both roles.</h3>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="certificate">
+                  <div class="achievementPanal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2aoCXXXuCMoCaZP1SbanCXiCpvyWmw8pc_xIBDpu7A&s" width="140px" height="140px" style="border-radius: 10px;"/>
+                    <div class="achieinfo">
+                      <h2>HackerRank Python Basics</h2>
+                      <div style="display: flex;width:130px;align-items:center;justify-content:space-between;margin-left:30px;"><i class="fa-solid fa-calendar-days"></i><p>12-04-2022</p></div>
+                      <div style="display: flex;width:400px">
+                        <div style="width: 100px;height:25px;border-radius:2px;background-color:#ac91ff;margin-left:30px;font-family:poppins;text-align:center;justify-content:center;align-items:center">certificate</div>
+                        <div style="width: 100px;height:25px;border-radius:2px;background-color:#55cb34;margin-left:30px;font-family:poppins;text-align:center;justify-content:center;align-items:center">verified</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="achievementPanal">
+                    <img src="https://blob.sololearn.com/avatars/sololearn.png" width="140px" height="140px" style="border-radius: 10px;"/>
+                    <div class="achieinfo">
+                      <h2>sololearn HTML&JavaScript</h2>
+                      <div style="display: flex;width:130px;align-items:center;justify-content:space-between;margin-left:30px;"><i class="fa-solid fa-calendar-days"></i><p>12-04-2022</p></div>
+                      <div style="display: flex;width:400px">
+                        <div style="width: 100px;height:25px;border-radius:2px;background-color:#ac91ff;margin-left:30px;font-family:poppins;text-align:center;justify-content:center;align-items:center">certificate</div>
+                        <div style="width: 100px;height:25px;border-radius:2px;background-color:#55cb34;margin-left:30px;font-family:poppins;text-align:center;justify-content:center;align-items:center">verified</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="achievementPanal">
+                    <img src="https://blob.sololearn.com/avatars/sololearn.png" width="140px" height="140px" style="border-radius: 10px;"/>
+                    <div class="achieinfo">
+                      <h2 title="sololearn JavaScript Specialisation">sololearn JavaScript Spec...</h2>
+                      <div style="display: flex;width:130px;align-items:center;justify-content:space-between;margin-left:30px;"><i class="fa-solid fa-calendar-days"></i><p>12-04-2022</p></div>
+                      <div style="display: flex;width:400px">
+                        <div style="width: 100px;height:25px;border-radius:2px;background-color:#ac91ff;margin-left:30px;font-family:poppins;text-align:center;justify-content:center;align-items:center">certificate</div>
+                        <div style="width: 100px;height:25px;border-radius:2px;background-color:#55cb34;margin-left:30px;font-family:poppins;text-align:center;justify-content:center;align-items:center">verified</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+             </div>
+
+             <div style="width: 100%;height:60px;position:relative;display:flex;justify-content:center;align-items:center">
+              <div class="popup" id="popup">
+                Graphics Designer
+              </div>
+
+             </div>
+             <div class="graphicsDesigner" id="graphicsDesigner">
+              <div class="graphicsdesignercontainer">
+                <div class="review">
+                  <div class="rev1">
+                    <img  src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/f54aebaff9bdea75dd0023f2427adff1-28974561635059359789/JPEG_20211024_030919_7607682671170633143.jpg" style="width: 80px;height:80px;border-radius:50%;margin-left:20px">
+                    <div style="width: 380px;height:100%;font-family:poppins;font-size:10px">
+                      <h2>keshawnbacchus</h2>
+                      <p style="margin-left: 30px;">Gentlemen went above and beyond in their service. Very transparent and assured client's needs are met. Goes and changes details when...</p>
+                    </div>
+                  </div>
+
+                  <div class="rev2">
+                    <div style="width: 80px;height:80px;border-radius:50%;margin-left:20px;font-family:poppins;text-align:center;background-color:rgb(190, 38, 38);color:white;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:bold">T</div>
+                    <div style="width: 380px;height:100%;font-family:poppins;font-size:10px">
+                      <h2>tommyburden962</h2>
+                      <p style="margin-left: 30px;">Gentlemen went above and beyond in their service. Very transparent and assured client's needs are met. Goes and changes details when...</p>
+                    </div>
+                  </div>
+
+                  <div class="rev3">
+                    <img  src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/105a4df689378d017b33c3153965d83f-912950771594478596180/JPEG_20200711_201253_8800394362684976174.jpg" style="width: 80px;height:80px;border-radius:50%;margin-left:20px">
+                    <div style="width: 380px;height:100%;font-family:poppins;font-size:10px">
+                      <h2>rrahulpatel</h2>
+                      <p style="margin-left: 30px;">Bang on time with great quality. highly recommended for any kind of collateral design of your business.</p>
+                    </div>
+                  </div>
+
+                  <div style="width: 300px;height:50px;margin-left:0px;margin-top:20px;display:flex;justify-content:center;align-items:center">
+                    <img src="https://user-images.githubusercontent.com/70473461/92360592-5a3bb800-f0ed-11ea-8dce-dd95b72c7825.png" style="mix-blend-mode: multiply;width:50px;height:50px;border-radius:50%;object-fit:contain">
+                    <a href="https://www.fiverr.com/s/vqDk9A"><p style="font-family: poppins;margin-left:20pxpx;cursor:pointer"> Find Me On fiverr</p></a>
+                  </div>
+
+                </div>
+                <div class="fiverr">
+                  <h1>Build exclusive projects</h1>
+                  <p>Building the project, Handling the Timeline, Understanding the Clients Request were the most important task I learnt by being a freelancer at fiverr.</p>
+                  <p>So, Now I can handle very critacal client or critacla project with a very little fear.</p>
+
+                  <p>Contact To get Your Work Done!</p>
+                  <div style="width: 150px;height:50px;border-radius:10px;background-color:white;display:flex;justify-content:center;align-items:center;color:black;font-family:poppins;margin-left:30px">
+                    <a href="https://www.fiverr.com/s/vqDk9A" style="font-family: poppins;color:black;text-decoration: none;">Contact
+                    </a>
+                  </div>
+                </div>
+              </div>
+             </div>
+
+
+             <div style="height: 30px;display:flex;justify-content:center;align-items:center;font-family:poppins;text-shadow:4px 4px hsl(251.83deg 100% 86.08%);font-weight:bolder;font-size:20px;margin-top:30px">
+              <p>Projects To Flex On</p>
+             </div>
+             <div class="project" id="project">
+              <div class="projectcontainer">
+
+
+                <div style="width: 450px;height:150px;background-color:#f5e6db;border-radius:10px;display:flex;align-items:center;justify-content:center;cursor:pointer">
+                  <div class="innercard">
+                    <img src="https://scrimba.com/assets/peeps-office-hour.svg" />
+                    <div class="cardinfo">
+                      <h2>Compare Them</h2>
+                      <div class="lables">
+                        <div class="html">HTML</div>
+                        <div class="css">CSS</div>
+                        <div class="js">JS</div>
+                        <div class="flask">flask</div>
+                      </div>
+                      <div style="display: flex;font-family:poppins;width:200px;align-items:center;justify-content:center">
+                        <i class="fa-solid fa-signal" style="color: green;"></i>
+                        <p style="margin-left: 10px;">Live</p>
+                        <i class="fa-brands fa-github fa-xl" style="margin-left: 30px;color:white"></i>
+                      </div>
+                      <div class="status"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="width: 450px;height:150px;background-color:#f5e6db;border-radius:10px;display:flex;align-items:center;justify-content:center;cursor:pointer">
+                  <div class="innercard">
+                    <img src="https://scrimba.com/assets/peeps-challenge.svg" />
+                    <div class="cardinfo">
+                      <h2>College Canteen</h2>
+                      <div class="lables">
+                        <div class="html">HTML</div>
+                        <div class="css">CSS</div>
+                        <div class="js">JS</div>
+                        <div class="flask">flask</div>
+                      </div>
+                      <div style="display: flex;font-family:poppins;width:200px;align-items:center;justify-content:center">
+                        <i class="fa-solid fa-signal" style="color: green;"></i>
+                        <p style="margin-left: 10px;">Live</p>
+                        <i class="fa-brands fa-github fa-xl" style="margin-left: 30px;color:white"></i>
+                      </div>
+                      <div class="status"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="width: 450px;height:150px;background-color:#f5e6db;border-radius:10px;display:flex;align-items:center;justify-content:center;cursor:pointer">
+                  <div class="innercard">
+                    <img src="https://scrimba.com/assets/peeps-social.svg" />
+                    <div class="cardinfo">
+                      <h2>Amazon Clone</h2>
+                      <div class="lables">
+                        <div class="html">HTML</div>
+                        <div class="css">CSS</div>
+                        <div class="js">JS</div>
+                      </div>
+                      <div style="display: flex;font-family:poppins;width:200px;align-items:center;justify-content:center">
+                        <i class="fa-solid fa-signal" style="color: green;"></i>
+                        <p style="margin-left: 10px;">Live</p>
+                        <i class="fa-brands fa-github fa-xl" style="margin-left: 30px;color:white"></i>
+                      </div>
+                      <div class="status"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="width: 450px;height:150px;background-color:#f5e6db;border-radius:10px;display:flex;align-items:center;justify-content:center;cursor:pointer">
+                  <div class="innercard">
+                    <img src="https://scrimba.com/assets/peeps-social.svg" />
+                    <div class="cardinfo">
+                      <h2>Business Managment</h2>
+                      <div class="lables">
+                        <div class="html">HTML</div>
+                        <div class="css">CSS</div>
+                        <div class="js">JS</div>
+                      </div>
+                      <div style="display: flex;font-family:poppins;width:200px;align-items:center;justify-content:center">
+                        <i class="fa-solid fa-signal" style="color: red;"></i>
+                        <p style="margin-left: 10px;">In Progress</p>
+                      </div>
+                      <div class="status"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+             </div>
+
+            
+            <div class='banner' id="banner">
+              <div class='leftarrow'>\
+                <i class="fa-solid fa-arrow-left fa-2xl" style="color: #ffffff;"></i>
+            </div>
+              <div class="addvertisement1">
+                <h2>Addvertisement1</h2>
+              </div>
+              <div class='rightarrow'></div>
+      
+            </div>
+    </body>
+    <script>
+
+        const imgdiv = document.getElementById('imgdiv');
+        const pull = document.getElementById('pull');
+        const infop = document.getElementById('infop');
+        const infoh3 = document.getElementById('infoh3');
+        
+        let condition = false
+
+        function showimg(){
+
+            condition = !condition
+
+            if(condition == true){
+                imgdiv.classList.add('showdiv');
+                pull.style.rotate = '360deg';
+            }
+            if(condition == false){
+                imgdiv.classList.remove('showdiv');
+                pull.style.rotate = '180deg';
+            }
+
+        }
+
+        const popup = document.getElementById('popup');
+        window.addEventListener('scroll', function() {
+
+
+            if (window.scrollY > 130 && window.scrollY < 500) {
+                document.getElementById('dev').style.textAlign= 'center';
+                document.getElementById('dev').style.fontSize = '15px';
+                document.getElementById('dev').innerHTML = ' Me FullStack Web Devloper, Graphics Designer';
+            }
+            if(window.scrollY > 500 && window.scrollY < 1220){
+                document.getElementById('dev').style.textAlign= 'center';
+                document.getElementById('dev').style.fontSize = '15px';
+                document.getElementById('dev').innerHTML = ' Me In My Journy';
+            }
+            if(window.scrollY > 1220 && window.scrollY < 1900){
+              document.getElementById('dev').style.textAlign= 'center';
+              document.getElementById('dev').style.fontSize = '15px';
+              document.getElementById('dev').innerHTML = ' Me As Graphics designer';
+              popup.classList.add('popupanimation');
+              popup.style.top = "0px";
+            }else{
+                popup.classList.remove('popupanimation');
+                popup.style.top = "60px";
+            }
+            if(window.scrollY > 1900 && window.scrollY < 2500){
+              document.getElementById('dev').style.textAlign= 'center';
+              document.getElementById('dev').style.fontSize = '15px';
+              document.getElementById('dev').innerHTML = ' Me As Web Devloper';
+            }
+            if(window.scrollY > 0 && window.scrollY < 130){
+                document.getElementById('dev').style.textAlign= 'center';
+                document.getElementById('dev').style.fontSize = '20px';
+                document.getElementById('dev').innerHTML = 'Me Aaditya.Dev';
+            }
+        });
+
+
+        let newscroll = 0;
+        window.addEventListener('scroll', function(){
+            console.log(window.scrollY);
+            if(window.scrollY > 500){
+                let newscroll = window.scrollY - 500;
+                document.getElementById('ball').style.marginTop = newscroll+"px";
+            }else{
+                document.getElementById('ball').style.marginTop = "0px";
+            }
+            if(window.scrollY >= 1050){
+              document.getElementById('ball').style.marginTop = "550px";
+            }
+        });
+
+
+        const ob1 = document.getElementById('ob1');
+        const ob2 = document.getElementById('ob2');
+        const ob3 = document.getElementById('ob3');
+        window.addEventListener('scroll', function(){
+          if(window.scrollY > 650 && window.screenY < 500){
+            ob2.classList.add('showinfo');
+            ob1.classList.add('hideinfo');
+            ob3.classList.remove('showinfo');
+          }else{
+            ob1.classList.remove('hideinfo');
+          }
+          if(window.scrollY > 830){
+            ob2.classList.remove('showinfo');
+            ob1.classList.add('hideinfo');
+            ob3.classList.add('showinfo');
+          }
+        });
+
+    </script>
+</html>
